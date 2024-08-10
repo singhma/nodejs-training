@@ -13,7 +13,8 @@
 - job of v8 engine is to execute javascript code
     - when you write some javascript code ==> code is read by v8 engine (c++ program) ==> converted into machine level code ==> gets executed by the machine
 
-> [!IMPORTANT] 
+
+> [!IMPORTANT]
 
 > why was there a need of nodejs, when v8 can execute any js code or, why cant we just have v8 engine on any server and run javascript code there?
 
