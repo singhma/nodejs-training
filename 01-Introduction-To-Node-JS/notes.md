@@ -1,6 +1,6 @@
 # What is NodeJS
 - Open source Javascript runtime environment
-- built on using chrome v8 Javascript engine
+- built on using chrome v8 Javascript engine which is written in c++
 - cross platform aka runs on mac, windows, unix
 - executes javascript code outside the browser
 - has an `event driven architecture capable of async io (non-blocking io)` - covered in later episodes
@@ -8,7 +8,16 @@
 - maintained by OpenJS Foundations (developed by Ryan Dahl in 2009)
 
 # History of Node JS
-- `2009`: Node.js was originally written by Ryan Dahl. The initial release supported only Linux. Its development and maintenance was led by Dahl and later sponsored by Joyent.
+- `2009`: Node.js was originally written by Ryan Dahl. The initial release supported macos and Linux. Its development and maintenance was led by Dahl.
+
+        - Ryan started with the SpiderMonkey JavaScript engine, which is found in Firefox. However, within two days, he switched to V8 and never looked back.
+
+        - Initially, Ryan was working independently, but a company named Joyent was working on something similar to Node.js. They hired Ryan to work under them, offering to fund his project — a big contribution from Joyent.
+
+        - The original name of Node.js was “web.js,” but it was later renamed to “Node.js” because its scope extends beyond web servers.
+
+        - The Apache HTTP Server was a blocking server, so Ryan wanted to create a non-blocking server. This is why Node.js is a non-blocking I/O. The advantage of a non-blocking server is that it can handle multiple requests with a smaller number of threads.
+        
 
 - `2010`: a package manager was introduced for the Node.js environment called npm. 
 
