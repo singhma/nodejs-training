@@ -10,7 +10,7 @@
   - if you want to make functions and variables to be available in other modules, you will need to explicitly export by using `module.exports` and then import them using `require` example `const calculateSum = require('/.sum.js)`
   - if you want to export multiple functions and variables, you need to wrap it inside an object
 
-  ```json
+  ```
   // Exporting via old way
 
   // module.exports = {
@@ -31,7 +31,7 @@
 
   - instead of importing as an entire object, another option is to do destructuring example below
 
-  ```json
+  ```
   // Performing Destructuring
   const {x, calculateSum} = require('./sum.js)
 
