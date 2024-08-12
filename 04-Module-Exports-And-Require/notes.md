@@ -39,9 +39,36 @@
 
   - module.exports and require are `Common JS Modules (CJS)`, there is another patten known as ES Modules (mjs)
 
-  | Common JS Module (cjs) | ES Modules (mjs) |
-  | ---------------------- | ---------------- |
-  | module.exports         | Item2.1          |
-  | require                | Item2.2          |
-  | Item1.3                | Item2.3          |
-  | Item1.4                | Item2.4          |
+    - default is common js module if you dont have package.json
+
+    ```
+    {
+    "type": "module" or "commonjs"
+    }
+    ```
+
+- ES Module pattern, export and import is different then common js module pattern
+
+  ```
+  export function calculateSum(a,b){
+  const sum = a+b;
+  console.log(sum)
+  }
+
+  import { calculateSum } from "./sum.js";
+
+  ```
+
+  | Common JS Module (cjs)                 | ES Modules (mjs)                                  |
+  | -------------------------------------- | ------------------------------------------------- |
+  | module.exports                         | export                                            |
+  | require                                | import                                            |
+  | default used in nodejs                 | default used in frameworks like react and angular |
+  | older way                              | Newer, this will become standard in near future   |
+  | synchronous mode when require moduling | Provides Async mode, for importing module         |
+  | code is run in non-strict mode         | code is run in strict mode                        |
+
+- if you are `returning direct (not an object) value using export, using destructuring during import will throw error`
+- follow one pattern, when exporting and use that pattern, `exporting an object is a common standard`
+- another pattern, in our case, what if we want to make folder `calculate` as an module, how can we achieve that?
+  - create a new file `index.js`, inside this file, require `multiply and sum`
