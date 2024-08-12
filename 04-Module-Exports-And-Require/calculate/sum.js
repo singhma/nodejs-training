@@ -1,8 +1,8 @@
-console.log("Sum Module executed");
+//console.log("Sum Module executed");
 
-z ="Hello World";
+// z ="Hello World";
 
-var x ="Hello World";
+// var x ="Hello World";
 // export function calculateSum(a,b){
 function calculateSum(a,b){
     const sum = a+b;
@@ -13,7 +13,6 @@ function calculateSum(a,b){
 
 // export x, and functions
 module.exports = {
-    x,
-    calculateSum,
+    calculateSum
 }
 

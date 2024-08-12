@@ -3,4 +3,4 @@ function calculateMultiply(a,b){
     console.log(result)
 }
 
-module.exports = {calculateMultiply,};
+module.exports = {calculateMultiply};

@@ -4,15 +4,16 @@
 // const {x, calculateSum} = require("./calculate/sum.js")  // Destructuring while importing
 // const {calculateMultiply} = require("./calculate/multiple.js")
 
-const {calculateMultiply,x,calculateSum} = require('./calculate')
+const {calculateMultiply,calculateSum} = require('./calculate')
+
+const data = require("./sample.json");
+console.log(JSON.stringify(data));
 
 var a = 10;
 var b = 20;
 
 
 // obj.calculateSum(a,b);
-// console.log(obj.x);
-console.log(x);
-console.log(this === global);
+// console.log(this === global);
 calculateSum(a,b)
 calculateMultiply(a,b);
