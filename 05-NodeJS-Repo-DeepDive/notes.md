@@ -28,5 +28,7 @@ Covers
         - file content is loaded according to file type
     3. wraps inside an IIFE
     4. Code Evaluation
-        - module.exports
+        - code is executed and returns module.exports
     5. Caching
+        - Module is cached
+        - if the same module is required in multiple module, node caches the required module
