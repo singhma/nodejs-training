@@ -36,3 +36,13 @@
     - When event loop is idle i.e. there is no callbacks in any of the queues, it will wait at the poll phase.
 
 - `Event loops behaviour at node is very different to browser` i.e. it also waits
+
+- One Tick == one circle / loop iteration 
+
+- idle and prepare phase: `used internally`
+
+- `libuv Event Loop is very different` to node js event loop
+
+- Important to read
+    - Node JS event loop 
+    - libuv event loop
