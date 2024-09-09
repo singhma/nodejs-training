@@ -16,3 +16,14 @@
 - Is NodeJS single threaded or multi threaded?
     - if its sync code, its single threaded
     - if its async code, and code is offloaded to libuv, then its multithreaded
+
+- Scalable I/O Event Notification Mecanism
+LibUV interact with OS using epoll
+    - epoll (linux) - epoll socket descriptor
+        - epoll is a scalable I/O event notification mechanism provided by the Linux kernel. It is used to efficiently monitor multiple file descriptors to see if I/O is possible on any of them. In the context of libuv and Node.js, epoll is one of the underlying mechanisms used to implement the event loop on Linux systems.
+        - A file descriptor is a low-level integer handle used to identify an open file or other I/O resource, such as a socket or pipe, within an operating system. In Node.js, file descriptors are used to perform various I/O operations.
+    - kqueue (mac os)
+    - epoll can handle multiple connections
+    - Read more about
+        - Event Emitter
+        - Streams and Buffers
